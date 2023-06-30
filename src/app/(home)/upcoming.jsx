@@ -1,4 +1,4 @@
-"use client"
+
 import React from "react";
 import CountdownTimer from "./countDown";
 import Image from "next/image";
@@ -11,15 +11,17 @@ const UpcomingEvents = () => {
   return (
 
     
-    <div>
-      <div className="flex flex-col md:flex-row items-center justify-center h-full bg-gradient-to-r from-orange-600 to-yellow-500 text-white py-6">
+    
+      <div suppressHydrationWarning={true} className="flex flex-col md:flex-row items-center justify-center h-full bg-gradient-to-r from-orange-600 to-yellow-500 text-white py-6">
         <div>
             
             <Image className="w-52 py-10 mr-8" src={event} alt="Upcoming event"></Image>
         </div>
-        <div className=" w-full md:w-1/3 mx-4">
+        <div className=" w-full md:w-1/3 mx-4 pl-3">
         <div className="flex items-center">
+            <div>
             <BsFillBookmarkFill className="mr-2"></BsFillBookmarkFill>
+            </div>
             <p>Latest Featured Event</p>
             </div>
         <h1 className="text-3xl font-bold mb-4">
@@ -47,7 +49,7 @@ const UpcomingEvents = () => {
         </div>
         <CountdownTimer  targetDate={targetDate} />
       </div>
-    </div>
+    
   );
 };
 

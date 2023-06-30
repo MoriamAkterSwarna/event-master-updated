@@ -1,7 +1,9 @@
 "use client"
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const CountdownTimer = ({ targetDate }) => {
+
+    
     
   const calculateTimeLeft = () => {
     const difference = new Date(targetDate) - new Date();
@@ -29,9 +31,17 @@ const CountdownTimer = ({ targetDate }) => {
     return () => clearTimeout(timer);
   }, [timeLeft]);
 
+  const [hydrated, setHydrated] = React.useState(false);
+    React.useEffect(() => {
+        setHydrated(true);
+    }, []);
+    if (!hydrated) {
+        // Returns null on first render, so the client and server match
+        return null;
+    }
   return (
     <div className='mt-20 md:mt-0'>
-        <div className='text-white w-full '>
+        <div className='text-white w-full'>
       {timeLeft.days > 0 && <span className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.days}d </span>}
       {timeLeft.hours > 0 && <span  className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.hours}h </span>}
       {timeLeft.minutes > 0 && <span className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.minutes}m </span>}
