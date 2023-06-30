@@ -1,4 +1,4 @@
-
+"use client"
 import React from "react";
 import CountdownTimer from "./countDown";
 import Image from "next/image";

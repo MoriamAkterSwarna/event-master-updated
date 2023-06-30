@@ -29,7 +29,7 @@ const CountdownTimer = ({ targetDate }) => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [timeLeft]);
+  }, [timeLeft,calculateTimeLeft()]);
 
   const [hydrated, setHydrated] = React.useState(false);
     React.useEffect(() => {
