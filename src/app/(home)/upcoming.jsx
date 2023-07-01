@@ -43,7 +43,7 @@ const UpcomingEvents = () => {
              <div>
              <FaLocationDot className="w-6 h-6 mr-2 mt-2"></FaLocationDot>
              </div>
-             <p>New York city</p>
+             <p className="mt-2">New York city</p>
              </div>
              </div>
         </div>

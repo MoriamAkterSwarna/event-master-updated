@@ -1,5 +1,6 @@
 
 import Banner from './banner';
+import ServicesSection from './services';
 import UpcomingEvents from './upcoming';
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
         <div>
            <Banner></Banner>
            <UpcomingEvents></UpcomingEvents>
+           <ServicesSection></ServicesSection>
         </div>
     );
 };
