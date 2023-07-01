@@ -3,7 +3,8 @@ import {navData}  from "@/data/navData";
 import { useState } from "react";
 import logo from '../assets/icons8-event-accepted-80.png'
 import Image from "next/image";
-import NavLink from "./Navlink";
+import NavLink from "./navLink";
+
 const Navbar = () => {
     const [navToggle, setNavToggle] = useState(false);
 
