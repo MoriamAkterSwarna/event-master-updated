@@ -1,5 +1,6 @@
 
 import Banner from './banner';
+import CompanyDetail from './companyDetail';
 import ServicesSection from './services';
 import UpcomingEvents from './upcoming';
 
@@ -10,6 +11,7 @@ const HomePage = () => {
            <Banner></Banner>
            <UpcomingEvents></UpcomingEvents>
            <ServicesSection></ServicesSection>
+           <CompanyDetail></CompanyDetail>
         </div>
     );
 };

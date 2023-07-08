@@ -1,22 +1,66 @@
+// export const navData = [
+//     {
+//       path: "/",
+//       title: "Home",
+//     },
+//     {
+//       path: "/company",
+//       title: "Company",
+//     },
+//     {
+//         path: "/events",
+//         title: "Events",
+//       },
+//       {
+//         path: '/categories',
+//         title: "Categories"
+//       },
+//     {
+//         path:"/about",
+//         title: "About Us"
+//     }
+//   ];
+
 export const navData = [
-    {
-      path: "/",
-      title: "Home",
-    },
-    {
-        path: "/events",
-        title: "Events",
+  {
+    path: "/",
+    title: "Home",
+  },
+  {
+    path: "/company",
+    title: "Company",
+    dropdown: [
+      {
+        path: "/company/item1",
+        title: "Item 1",
       },
       {
-        path: '/categories',
-        title: "Categories"
+        path: "/company/item2",
+        title: "Item 2",
       },
-    {
-      path: "/contact",
-      title: "Contact Us",
-    },
-    {
-        path:"/about",
-        title: "About Us"
-    }
-  ];
+    ],
+  },
+  
+  {
+    path: "/categories",
+    title: "Categories",
+    dropdown: [
+      {
+        path: "/categories/item1",
+        title: "Item 1",
+      },
+      {
+        path: "/categories/item2",
+        title: "Item 2",
+      },
+    ],
+  },
+  {
+    path: "/events",
+    title: "Events",
+  },
+  {
+    path: "/about",
+    title: "About Us",
+  },
+];
