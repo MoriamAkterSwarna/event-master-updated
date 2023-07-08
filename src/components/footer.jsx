@@ -9,7 +9,7 @@ const services = [
 ];
 const Footer = () => {
   return (
-    <div>
+    <div className="overflow-hidden"> 
       <footer className="footer p-10 bg-gray-600  text-gray-950">
         <div>
           <Image className="w-16" src={logo} alt="Event master Logo"></Image>

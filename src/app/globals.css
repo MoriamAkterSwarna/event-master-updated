@@ -7,7 +7,7 @@
 }
 .company-details {
     position: relative;
-    height: 98vh;
+    min-height: 100vh;
   }
   
   .company-details::before {

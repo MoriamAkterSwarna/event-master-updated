@@ -45,7 +45,7 @@ const CountdownTimer = ({ targetDate }) => {
       {timeLeft.days > 0 && <span className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.days}d </span>}
       {timeLeft.hours > 0 && <span  className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.hours}h </span>}
       {timeLeft.minutes > 0 && <span className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.minutes}m </span>}
-      {timeLeft.seconds > 0 && <span className='p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.seconds}s</span>}
+      {timeLeft.seconds > 0 && <span className='py-6 px-3 lg:p-6 border-2 border-white rounded text-2xl font-bold '>{timeLeft.seconds}s</span>}
     </div>
 
     <div className='mt-6 mx-10 ml-20'>
