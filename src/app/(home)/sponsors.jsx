@@ -5,7 +5,6 @@ import image1 from "../../assets/sponsors/InvCompany1.webp";
 import image2 from "../../assets/sponsors/InvCompany2.webp";
 import image3 from "../../assets/sponsors/InvCompany3.webp";
 import image4 from "../../assets/sponsors/InvCompany4.webp";
-import image5 from "../../assets/sponsors/Bajaj.webp";
 
 import Image from "next/image";
 const Sponsors = () => {

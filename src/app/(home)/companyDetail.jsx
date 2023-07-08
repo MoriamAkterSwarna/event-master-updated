@@ -1,21 +1,25 @@
 "use client"
 // import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import { VscServerProcess } from 'react-icons/vsc';
 import { BiRightArrowCircle} from 'react-icons/bi';
 import { BsMicrosoftTeams } from 'react-icons/bs';
 import { MdRoundaboutRight } from 'react-icons/md';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { motion } from "framer-motion"
 
 const CompanyDetail = () => {
-    
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
   
     <div className="company-details px-1 lg:px-24 z-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
   {/* our process div */}
   
-  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
   
     <VscServerProcess className="mx-auto w-10 h-10 mb-2 text-orange-500"></VscServerProcess>
     <h2 className="text-2xl font-bold mb-4 text-center">
@@ -31,7 +35,7 @@ const CompanyDetail = () => {
   </motion.div>
 
   {/* our team div */}
-  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="800" className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
     <BsMicrosoftTeams className="mx-auto w-10 h-10 mb-2 text-orange-500"></BsMicrosoftTeams>
     <h2 className="text-2xl font-bold mb-4 text-center">
       Your Event Dreams, Our Team's Expertise.
@@ -46,7 +50,7 @@ const CompanyDetail = () => {
   </motion.div>
 
   {/* about us div */}
-  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000"  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
     <MdRoundaboutRight className="mx-auto w-10 h-10 mb-2 text-orange-500"></MdRoundaboutRight>
     <h2 className="text-2xl font-bold mb-4 text-center">
       Unveiling Our Story: Crafting Unforgettable Experiences.
