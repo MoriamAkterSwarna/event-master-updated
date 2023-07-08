@@ -1,4 +1,4 @@
-
+"use client"
 // import Link from "next/link";
 import React from "react";
 import { VscServerProcess } from 'react-icons/vsc';
@@ -6,7 +6,7 @@ import { BiRightArrowCircle} from 'react-icons/bi';
 import { BsMicrosoftTeams } from 'react-icons/bs';
 import { MdRoundaboutRight } from 'react-icons/md';
 
-
+import { motion } from "framer-motion"
 
 const CompanyDetail = () => {
     
@@ -14,7 +14,9 @@ const CompanyDetail = () => {
   
     <div className="company-details px-1 lg:px-24 z-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
   {/* our process div */}
-  <div className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  
     <VscServerProcess className="mx-auto w-10 h-10 mb-2 text-orange-500"></VscServerProcess>
     <h2 className="text-2xl font-bold mb-4 text-center">
       We're challenging the conventional norms of a typical events company.
@@ -26,10 +28,10 @@ const CompanyDetail = () => {
       <p className="text-xl font-semibold">Get to Know Our Methodology</p>
       <BiRightArrowCircle className="w-8 h-8 text-orange-500" />
     </div>
-  </div>
+  </motion.div>
 
   {/* our team div */}
-  <div className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
     <BsMicrosoftTeams className="mx-auto w-10 h-10 mb-2 text-orange-500"></BsMicrosoftTeams>
     <h2 className="text-2xl font-bold mb-4 text-center">
       Your Event Dreams, Our Team's Expertise.
@@ -41,10 +43,10 @@ const CompanyDetail = () => {
       <p className="text-xl font-semibold">Know more about our team</p>
       <BiRightArrowCircle className="w-8 h-8 text-orange-500" />
     </div>
-  </div>
+  </motion.div>
 
   {/* about us div */}
-  <div className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
+  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}  className="bg-white my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 ">
     <MdRoundaboutRight className="mx-auto w-10 h-10 mb-2 text-orange-500"></MdRoundaboutRight>
     <h2 className="text-2xl font-bold mb-4 text-center">
       Unveiling Our Story: Crafting Unforgettable Experiences.
@@ -56,7 +58,7 @@ const CompanyDetail = () => {
       <p className="text-xl font-semibold">Gain Insight into what we are</p>
       <BiRightArrowCircle className="w-8 h-8 text-orange-500" />
     </div>
-  </div>
+  </motion.div>
 </div>
 
   );
