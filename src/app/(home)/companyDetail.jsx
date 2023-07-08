@@ -11,9 +11,9 @@ import { MdRoundaboutRight } from 'react-icons/md';
 const CompanyDetail = () => {
     
   return (
-    <div  className="company-details px-24 z-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div  className="company-details px-1 lg:px-24 z-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {/* our process div */}
-      <div className="bg-white h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
+      <div className="bg-white lg:h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
         <VscServerProcess className=" mx-auto w-10 h-10 mb-2 text-orange-500"></VscServerProcess>
         <h2 className="text-2xl font-bold mb-4 text-center">
           We're challenging the conventional norms of a typical events company.
@@ -29,7 +29,7 @@ const CompanyDetail = () => {
       </div>
 
       {/* out team div */}
-      <div className="bg-white h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
+      <div className="bg-white lg:h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
         <BsMicrosoftTeams className=" mx-auto w-10 h-10 mb-2 text-orange-500"></BsMicrosoftTeams>
         <h2 className="text-2xl font-bold mb-4 text-center">
         Your Event Dreams, Our Team's Expertise.
@@ -44,7 +44,7 @@ const CompanyDetail = () => {
        </div>
       </div>
       {/* about us div */}
-      <div className="bg-white h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
+      <div className="bg-white lg:h-[85%] my-[7%] p-5 mx-10 hover:border-b-8 hover:border-b-orange-500 relative">
         <MdRoundaboutRight className=" mx-auto w-10 h-10 mb-2 text-orange-500"></MdRoundaboutRight>
         <h2 className="text-2xl font-bold mb-4 text-center">
         Unveiling Our Story: Crafting Unforgettable Experiences.
