@@ -31,12 +31,16 @@ export const navData = [
     title: "Company",
     dropdown: [
       {
-        path: "/company/item1",
-        title: "Item 1",
+        path: "/company/process",
+        title: "Our Process",
       },
       {
-        path: "/company/item2",
-        title: "Item 2",
+        path: "/company/about",
+        title: "About",
+      },
+      {
+        path: "/company/team",
+        title: "Join The Team",
       },
     ],
   },
