@@ -1,6 +1,7 @@
 import React from "react";
 import { HiOutlineMail } from 'react-icons/hi';
 import { AiOutlinePhone } from 'react-icons/ai';
+import Link from "next/link";
 
 const PreNav = () => {
   return (
@@ -22,10 +23,12 @@ const PreNav = () => {
           <ul className="menu menu-horizontal px-1">
             
             <li>
-              <a>Login</a>
+              {/* <a>Login</a> */}
+              <Link href="/login">Login</Link>
+             
             </li>
             <li>
-              <a>Register</a>
+            <Link href="/signup">Register</Link>
             </li>
             
           </ul>

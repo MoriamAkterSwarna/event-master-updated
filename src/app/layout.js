@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Event Master',
-  description: 'Event Master',
+  description: 'Event Master is an event planning application',
 }
 
 export default function RootLayout({ children }) {
