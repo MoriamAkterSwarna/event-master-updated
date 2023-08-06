@@ -1,6 +1,7 @@
 
 import Banner from './banner';
 import CompanyDetail from './companyDetail';
+import Feedback from './feedback';
 import Offers from './offer';
 import ServicesSection from './services';
 import Sponsors from './sponsors';
@@ -16,6 +17,7 @@ const HomePage = () => {
            <CompanyDetail></CompanyDetail>
            <Offers></Offers>
            <Sponsors></Sponsors>
+           {/* <Feedback></Feedback> */}
         </div>
     );
 };

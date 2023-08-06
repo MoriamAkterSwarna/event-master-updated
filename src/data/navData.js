@@ -64,7 +64,11 @@ export const navData = [
     title: "Events",
   },
   {
-    path: "/about",
-    title: "About Us",
+    path: "/contact",
+    title: "Contact Us",
   },
+  // {
+  //   path:"/registerEvent",
+  //   title: "Register An Event"
+  // }
 ];
