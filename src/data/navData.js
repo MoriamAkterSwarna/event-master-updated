@@ -67,8 +67,5 @@ export const navData = [
     path: "/contact",
     title: "Contact Us",
   },
-  // {
-  //   path:"/registerEvent",
-  //   title: "Register An Event"
-  // }
+ 
 ];

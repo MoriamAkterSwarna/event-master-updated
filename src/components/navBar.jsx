@@ -1,10 +1,10 @@
 "use client";
 import { navData } from "@/data/navData";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import logo from "../assets/icons8-event-accepted-80.png";
 import NavLink from "./navLink";
-import Link from "next/link";
 
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -59,13 +59,13 @@ const Navbar = () => {
                 )}
               </li>
             ))}
-            <Link href='/registerEvent'>
-            <li>
-              {" "}
-              <button className=" bg-yellow-400 hover:bg-orange-500">
-                Register An Event
-              </button>
-            </li>
+            <Link href="/registerEvent">
+              <li>
+                {" "}
+                <button className=" btn-outline border-2 border-orange-500 hover:bg-orange-500  hover:border-none hover:text-white">
+                  Register An Event
+                </button>
+              </li>
             </Link>
           </ul>
         </div>
