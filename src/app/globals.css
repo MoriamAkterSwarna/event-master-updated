@@ -2,42 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-.drop-icon::after{
-    color: gray;
+.drop-icon::after {
+  color: gray;
 }
 .company-details {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  .company-details::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/company-home/corporate-businessman-giving-presentation-large-audience.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.6;
-    z-index: -1;
-    background-blend-mode: darken, luminosity, color-dodge;
-    background-color: transparent;
-  }
+  position: relative;
+  min-height: 100vh;
+}
 
-  .offers{
-    background-image: url('../assets/5185208.jpg');
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .login-bg{
-    background-image: url('../assets/5185208.jpg');
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+.company-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/company-home/corporate-businessman-giving-presentation-large-audience.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+  background-blend-mode: darken, luminosity, color-dodge;
+  background-color: transparent;
+}
+
+.offers {
+  background-image: url("../assets/5185208.jpg");
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login-bg {
+  background-image: url("../assets/5185208.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* .process-bg {
+  background-image: url("../assets/19197591.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken, luminosity, color-dodge;
+  background-color: transparent;
+  height: 80vh;
+  object-fit: cover;
+  width: 100%;
+} */

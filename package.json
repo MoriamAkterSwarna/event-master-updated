@@ -16,6 +16,7 @@
     "firebase": "^10.1.0",
     "framer-motion": "^10.12.18",
     "keen-slider": "^6.8.5",
+    "lottie-react": "^2.4.0",
     "next": "13.4.7",
     "postcss": "8.4.24",
     "react": "18.2.0",

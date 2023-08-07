@@ -212,7 +212,6 @@ const EventForm = () => {
   } = useForm();
   return (
     <form
-      
       // onSubmit={handleSubmit(onSubmit)}
       className="card-body grid grid-cols-1 w-full md:w-1/2 lg:w-1/3 border border-orange-400 shadow-xl my-10 rounded-sm mx-2 md:mx-4 lg:mx-20">
       <div className="text-center">
@@ -336,7 +335,7 @@ const EventForm = () => {
             defaultValue=""
             rules={{ required: "Please select a country" }}
             render={({ field }) => (
-              <select className="input border-orange-400 ml-2" {...field}>
+              <select className="input border-orange-400" {...field}>
                 <option value="" disabled>
                   Select a country
                 </option>
@@ -394,6 +393,53 @@ const EventForm = () => {
                   checked={field.value === "in person"}
                 />
                 <label htmlFor="in-person">In Person</label>
+                <br />
+                <input
+                  {...field}
+                  type="radio"
+                  value="wedding"
+                  id="wedding"
+                  checked={field.value === "wedding"}
+                />
+                <label htmlFor="wedding">wedding</label>
+                <br />
+                <input
+                  {...field}
+                  type="radio"
+                  value="business"
+                  id="business"
+                  checked={field.value === "business"}
+                />
+                <label htmlFor="business">Business</label>
+                <br />
+                <input
+                  {...field}
+                  type="radio"
+                  value="conference"
+                  id="conference"
+                  checked={field.value === "conference"}
+                />
+                <label htmlFor="conference">Conference</label>
+                <br />
+                <input
+                  {...field}
+                  type="radio"
+                  value="concert"
+                  id="concert"
+                  checked={field.value === "concert"}
+                />
+                <label htmlFor="concert">Concert</label>
+                <br />
+                <input
+                  {...field}
+                  type="radio"
+                  value="festival"
+                  id="festival"
+                  checked={field.value === "festival"}
+                />
+                <label htmlFor="festival">Festival</label>
+                <br />
+
                 {fieldState.error && (
                   <p style={{ color: "red" }}>{fieldState.error.message}</p>
                 )}

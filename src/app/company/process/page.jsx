@@ -1,9 +1,10 @@
 import React from 'react';
+import ProcessDetails from './processDetails';
 
 const ProcessPage = () => {
     return (
         <div>
-            Process
+            <ProcessDetails></ProcessDetails>
         </div>
     );
 };

@@ -1,6 +1,11 @@
 import Image from "next/image";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsPinterest,
+  BsTwitter,
+} from "react-icons/bs";
 import logo from "../assets/icons8-event-accepted-80.png";
-import { BsFacebook, BsInstagram, BsPinterest, BsTwitter } from 'react-icons/bs';
 const services = [
   { title: "Wedding Planning", link: "/wedding-planning" },
   { title: "Corporate Events", link: "/corporate-events" },
@@ -9,7 +14,7 @@ const services = [
 ];
 const Footer = () => {
   return (
-    <div className="overflow-hidden"> 
+    <div className="overflow-hidden">
       <footer className="footer p-10 bg-gray-600  text-gray-950">
         <div>
           <Image className="w-16" src={logo} alt="Event master Logo"></Image>
@@ -26,8 +31,7 @@ const Footer = () => {
               <li key={index} className="mb-1">
                 <a
                   className="hover:text-orange-500 hover:font-semibold"
-                  href={service.link}
-                >
+                  href={service.link}>
                   {service.title}
                 </a>
               </li>
@@ -53,24 +57,21 @@ const Footer = () => {
           </a>
         </div>
       </footer>
-     
+
       <div className="bg-gray-600 py-8 footer-center text-gray-950 border-t-2 border-gray-700">
-        
-            
         <div className="flex justify-center mb-4">
-        <div className="text-white font-bold bg-blue-500 hover:bg-blue-700 w-20 py-3 mask mask-hexagon-2 mr-2">
+          <div className="text-white font-bold bg-blue-500 hover:bg-blue-700 w-20 py-3 mask mask-hexagon-2 mr-2">
             <BsFacebook className="w-12 h-12 mx-auto"></BsFacebook>
-        </div>
-        <div className="text-white font-bold  bg-rose-500 hover:bg-rose-700 w-20 py-3 mask mask-hexagon-2 mr-2">
+          </div>
+          <div className="text-white font-bold  bg-rose-500 hover:bg-rose-700 w-20 py-3 mask mask-hexagon-2 mr-2">
             <BsInstagram className="w-12 h-12 mx-auto"></BsInstagram>
-        </div>
-        <div className="text-white font-bold  bg-blue-400 hover:bg-blue-600 w-20 py-3 mask mask-hexagon-2 mr-2">
+          </div>
+          <div className="text-white font-bold  bg-blue-400 hover:bg-blue-600 w-20 py-3 mask mask-hexagon-2 mr-2">
             <BsTwitter className="w-12 h-12 mx-auto"> </BsTwitter>
-        </div>
-        <div className="text-white font-bold  bg-red-500 hover:bg-red-700 w-20 py-3 mask mask-hexagon-2 mr-2">
+          </div>
+          <div className="text-white font-bold  bg-red-500 hover:bg-red-700 w-20 py-3 mask mask-hexagon-2 mr-2">
             <BsPinterest className="w-12 h-12 mx-auto"> </BsPinterest>
-        </div>
-        
+          </div>
         </div>
         <p className="mx-auto">
           Copyright &copy; 2023 - All right reserved by{" "}
