@@ -41,13 +41,14 @@
   background-position: center;
   background-size: cover;
 }
-/* .process-bg {
-  background-image: url("../assets/19197591.jpg");
+.team-banner {
+  background-image: url("../assets/team/event-managers-showing-something-laptop-couple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: darken, luminosity, color-dodge;
+  background-blend-mode: darken, luminosity;
   background-color: transparent;
   height: 80vh;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
-} */
+  opacity: 0.8;
+}

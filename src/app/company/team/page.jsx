@@ -1,9 +1,10 @@
 import React from 'react';
+import TeamDetails from './teamDetails';
 
 const TeamPage = () => {
     return (
         <div>
-            Join our team
+            <TeamDetails></TeamDetails>
         </div>
     );
 };

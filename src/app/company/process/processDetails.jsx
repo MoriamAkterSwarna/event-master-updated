@@ -21,7 +21,7 @@ const ProcessDetails = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <>
       <div className="flex flex-col-reverse lg:flex-row">
         <div
           data-aos="fade-up"
@@ -295,7 +295,7 @@ const ProcessDetails = () => {
           </div>
         </div>
       </>
-    </div>
+    </>
   );
 };
 

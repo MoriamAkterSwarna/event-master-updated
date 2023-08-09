@@ -3,9 +3,9 @@ import ProcessDetails from './processDetails';
 
 const ProcessPage = () => {
     return (
-        <div>
+        <>
             <ProcessDetails></ProcessDetails>
-        </div>
+        </>
     );
 };
 
