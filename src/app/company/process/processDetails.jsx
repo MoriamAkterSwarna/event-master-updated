@@ -70,7 +70,7 @@ const ProcessDetails = () => {
           </div>
         </div>
         {/* step 2 create account */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col-reverse lg:flex-row text-white mx-3 lg:mx-20">
           <div data-aos="fade-up" data-aos-duration="3000" className="w-[50vw]">
             <Lottie
               className="w-full lg:w-4/5 mx-20 lg:mx-10 h-[40vh] lg:h-[60vh] "
@@ -114,7 +114,7 @@ const ProcessDetails = () => {
         </div>
 
         {/* step 4 budget discussion */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col-reverse lg:flex-row text-white mx-3 lg:mx-20">
           <div data-aos="fade-up" data-aos-duration="3000" className="w-[50vw]">
             <Lottie
               className="w-full lg:w-4/5 mx-20 lg:mx-10 h-[40vh] lg:h-[60vh] "
@@ -156,7 +156,7 @@ const ProcessDetails = () => {
           </div>
         </div>
         {/* step 6 Review and Adjustments */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col-reverse lg:flex-row text-white mx-3 lg:mx-20">
           <div data-aos="fade-up" data-aos-duration="3000" className="w-[50vw]">
             <Lottie
               className="w-full lg:w-4/5 mx-20 lg:mx-10 h-[40vh] lg:h-[60vh] "
@@ -199,7 +199,7 @@ const ProcessDetails = () => {
         </div>
 
         {/* step 8 Event Day Execution */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col-reverse lg:flex-row text-white mx-3 lg:mx-20">
           <div data-aos="fade-up" data-aos-duration="3000" className="w-[50vw]">
             <Lottie
               className="w-full lg:w-4/5 mx-20 lg:mx-10 h-[40vh] lg:h-[60vh] "
@@ -243,7 +243,7 @@ const ProcessDetails = () => {
         </div>
 
         {/* step 10 Feedback and Follow-Up */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col-reverse lg:flex-row text-white mx-3 lg:mx-20">
           <div data-aos="fade-up" data-aos-duration="3000" className="w-[50vw]">
             <Lottie
               className="w-full lg:w-4/5 mx-20 lg:mx-10 h-[40vh] lg:h-[60vh] "

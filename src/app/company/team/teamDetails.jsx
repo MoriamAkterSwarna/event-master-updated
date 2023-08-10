@@ -1,6 +1,8 @@
-"use client"
+"use client";
+import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import { useEffect } from "react";
 import { BiSolidTimer } from "react-icons/bi";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiInspiration, GiPostOffice, GiTargetPrize } from "react-icons/gi";
@@ -11,8 +13,6 @@ import team5 from "../../../assets/team/event-manager-showing-something-laptop-w
 import team4 from "../../../assets/team/female-wedding-planner-working-ceremony.jpg";
 import team3 from "../../../assets/team/handsome-businessman-with-women-standing-working-cafe.jpg";
 import team2 from "../../../assets/team/three-beautiful-smiling-women-happily-looking-camera-holding.jpg";
-import { useEffect } from "react";
-import AOS from "aos";
 
 const TeamDetails = () => {
   useEffect(() => {
@@ -33,7 +33,7 @@ const TeamDetails = () => {
         </div>
       </div>
       {/* gallery */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 mx-20 my-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 mx-4 md:mx-20 my-10">
         <div
           data-aos="flip-right"
           data-aos-duration="3000"
@@ -48,7 +48,7 @@ const TeamDetails = () => {
         <div
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="bg-orange-500 py-10 px-20">
+          className="bg-orange-500 py-10 px-4 md:px-20">
           <h4 className="text-justify mt-20 mb-3 text-white">
             "Welcome to our passionate and dynamic event planning team! We are a
             group of creative minds dedicated to crafting extraordinary
@@ -80,7 +80,7 @@ const TeamDetails = () => {
           Facilities
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-20 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4 md:mx-20 my-10">
           <div className="border-b-2 border-x-2 border-orange-500 text-center p-6 rounded-md">
             <BsPersonWorkspace className="w-20 h-20 -mt-14 mx-auto mb-4 text-orange-500"></BsPersonWorkspace>
             <h3 className="text-xl font-bold mb-4">Spacious Workspace</h3>

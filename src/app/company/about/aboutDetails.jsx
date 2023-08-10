@@ -24,11 +24,11 @@ const AboutDetailsPage = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="3000"
-        className="-mt-20 bg-white grid grid-cols-1 md:grid-cols-2 mx-20">
+        className="mt-10 md:-mt-20 bg-white grid grid-cols-1 lg:grid-cols-2 mx-4 md:mx-20">
         <div>
           <Image className="h-full" src={aboutpic} alt="about pic"></Image>
         </div>
-        <div className="bg-orange-500 text-white text-xl  p-20 text-justify">
+        <div className="bg-orange-500 text-white text-xl p-8 md:p-20 text-justify">
           <p>
             Welcome to Event Master, your ultimate partner in creating
             unforgettable moments! At Event Master, we believe that every
@@ -44,7 +44,7 @@ const AboutDetailsPage = () => {
       </div>
 
       {/* mission */}
-      <div className="bg-slate-200 grid grid-cols-1 md:grid-cols-2 px-20 h-full my-20">
+      <div className="bg-slate-200 grid grid-cols-1 lg:grid-cols-2 px-6 md:px-20 h-full my-20">
         <div data-aos="zoom-in" data-aos-duration="3000" className="p-10">
           <h3 className="text-5xl font-bold">Our Mission</h3>
           <p className=" mt-5 text-justify">
@@ -103,7 +103,7 @@ const AboutDetailsPage = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-20 gap-10 my-10 pb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-6 md:px-20 gap-10 my-10 pb-14">
           <div
             data-aos="zoom-out"
             data-aos-duration="3000"
