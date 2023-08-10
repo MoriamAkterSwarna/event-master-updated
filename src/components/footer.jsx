@@ -15,7 +15,7 @@ const services = [
 const Footer = () => {
   return (
     <div className="overflow-hidden">
-      <footer className="footer p-10 bg-gray-600  text-gray-950">
+      <footer className="footer p-10 bg-black  text-white">
         <div>
           <Image className="w-16" src={logo} alt="Event master Logo"></Image>
           <p>
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="bg-gray-600 py-8 footer-center text-gray-950 border-t-2 border-gray-700">
+      <div className="bg-black py-8 footer-center text-white border-t-2 border-gray-700">
         <div className="flex justify-center mb-4">
           <div className="text-white font-bold bg-blue-500 hover:bg-blue-700 w-20 py-3 mask mask-hexagon-2 mr-2">
             <BsFacebook className="w-12 h-12 mx-auto"></BsFacebook>

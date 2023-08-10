@@ -1,3 +1,4 @@
+"use client"
 import "aos/dist/aos.css";
 import Image from "next/image";
 import { BiSolidTimer } from "react-icons/bi";
@@ -10,8 +11,14 @@ import team5 from "../../../assets/team/event-manager-showing-something-laptop-w
 import team4 from "../../../assets/team/female-wedding-planner-working-ceremony.jpg";
 import team3 from "../../../assets/team/handsome-businessman-with-women-standing-working-cafe.jpg";
 import team2 from "../../../assets/team/three-beautiful-smiling-women-happily-looking-camera-holding.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const TeamDetails = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div>
       <div className="team-banner text-center">

@@ -52,3 +52,20 @@
   width: 100%;
   opacity: 0.8;
 }
+.about-bg {
+  background-image: url("../assets/about/silhouette-confident-businesspeople.jpg");
+  background-repeat: no-repeat;
+  height: 80vh;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  background-blend-mode: darken, luminosity;
+}
+
+.apart-bg {
+  background-image: url("../assets/5185208.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+}
