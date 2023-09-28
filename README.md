@@ -1,3 +1,26 @@
+# <span style="color: orange;">Event Master</span>
+
+It is a Full Stack Web application Based on Next JS. This Project is for handling all events and supervise post event services also.
+
+# Technologies:
+
+- Next JS,
+- Firebase,
+- Tailwind CSS
+- Daisy U
+- React Hook Form
+- Framer Motion
+- Aos animation Library
+- Keen Slider
+- Lottie React
+- React Fast Marquee
+- React Icons
+- React Toastify
+
+---
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

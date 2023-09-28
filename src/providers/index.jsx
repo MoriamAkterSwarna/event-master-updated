@@ -2,7 +2,9 @@
 
 import AuthProvider from "./AuthProvider";
 
-const Providers = ({children}) => {
+
+
+const Providers = ({ children }) => {
   return <AuthProvider>{children}</AuthProvider>;
 };
 

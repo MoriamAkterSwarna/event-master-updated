@@ -27,7 +27,12 @@ const ProcessDetails = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
           className=" w-[100%] lg:w-1/2 h-full lg:h-[80vh]">
-          <Image className="object-cover" src={processBg} alt="" />
+          <Image
+            className="object-cover"
+            src={processBg}
+            alt=""
+            placeholder="blur"
+          />
         </div>
         <div
           data-aos="fade-up"

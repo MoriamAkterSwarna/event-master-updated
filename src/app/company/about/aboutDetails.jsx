@@ -26,7 +26,7 @@ const AboutDetailsPage = () => {
         data-aos-duration="3000"
         className="mt-10 md:-mt-20 bg-white grid grid-cols-1 lg:grid-cols-2 mx-4 md:mx-20">
         <div>
-          <Image className="h-full" src={aboutpic} alt="about pic"></Image>
+          <Image className="h-full" src={aboutpic} alt="about pic"  placeholder="blur"></Image>
         </div>
         <div className="bg-orange-500 text-white text-xl p-8 md:p-20 text-justify">
           <p>
@@ -91,7 +91,7 @@ const AboutDetailsPage = () => {
         </div>
 
         <div data-aos="zoom-in" data-aos-duration="3000" className="lg:my-32">
-          <Image className=" mt-10" src={mission} alt="mission pic"></Image>
+          <Image className=" mt-10" src={mission} alt="mission pic" placeholder="blur"></Image>
         </div>
       </div>
 

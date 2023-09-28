@@ -6,7 +6,10 @@ import { useState } from "react";
 import logo from "../assets/icons8-event-accepted-80.png";
 import NavLink from "./navLink";
 
+
 const Navbar = () => {
+  
+
   const [navToggle, setNavToggle] = useState(false);
 
   return (
@@ -67,6 +70,9 @@ const Navbar = () => {
                 </button>
               </li>
             </Link>
+            <li>
+              {/* {uid ? <Image src={photoURL} alt="User"></Image> : <p>avatar</p>} */}
+            </li>
           </ul>
         </div>
         <label className="swap-rotate swap text-orange-500 btn-circle btn ml-2 bg-white lg:hidden">
