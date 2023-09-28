@@ -4,12 +4,13 @@ It is a Full Stack Web application Based on Next JS. This Project is for handlin
 
 # Technologies:
 
-- Next JS,
-- Firebase,
-- Tailwind CSS
-- Daisy U
-- React Hook Form
+- Next JS
+- Firebase
+- Material UI
 - Framer Motion
+- Tailwind CSS
+- Daisy UI
+- React Hook Form
 - Aos animation Library
 - Keen Slider
 - Lottie React

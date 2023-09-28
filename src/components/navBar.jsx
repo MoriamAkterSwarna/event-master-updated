@@ -1,20 +1,18 @@
 "use client";
 import { navData } from "@/data/navData";
+import useAuth from "@/hooks/useAuth";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
 import logo from "../assets/icons8-event-accepted-80.png";
 import NavLink from "./navLink";
-
-
+import ProfileMenu from "../components/profileMenu";
+import { useState } from "react";
 const Navbar = () => {
-  
-
   const [navToggle, setNavToggle] = useState(false);
-
   return (
     <>
-      <nav className="navbar bg-white top-0 z-10 lg:px-24 flex justify-around container mx-auto">
+      <nav className="navbar bg-white top-0 z-10 lg:px-24 flex justify-around container">
         <div className="flex">
           <Image
             src={logo}
@@ -70,11 +68,54 @@ const Navbar = () => {
                 </button>
               </li>
             </Link>
-            <li>
-              {/* {uid ? <Image src={photoURL} alt="User"></Image> : <p>avatar</p>} */}
-            </li>
           </ul>
+
+          {/* {user && (
+            <div className="dropdown-end dropdown">
+              <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
+                <div className="w-10 rounded-full">
+                  <Image
+                    alt="user-logo"
+                    title={displayName}
+                    src={
+                      photoURL ||
+                      "https://i.ibb.co/0QZCv5C/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png"
+                    }
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 rounded-full"
+                  />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu-compact dropdown-content menu rounded-box mt-3 w-52 bg-base-100 p-2 shadow">
+                <li className="mb-2 mt-1 text-center font-semibold">
+                  {displayName}
+                </li>
+                <div className="divider my-0"></div>
+                <li className="mb-2">
+                  <NavLink
+                    href="/profile"
+                    className="text-lg"
+                    activeClassName="text-blue-500">
+                    Profile
+                  </NavLink>
+                </li>
+                <li className="">
+                  <button
+                    onClick={handleLogout}
+                    className="btn-warning btn content-center text-white">
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </div>
+          )} */}
+
+          <ProfileMenu></ProfileMenu>
         </div>
+
         <label className="swap-rotate swap text-orange-500 btn-circle btn ml-2 bg-white lg:hidden">
           <input
             checked={navToggle}

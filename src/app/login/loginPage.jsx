@@ -1,20 +1,77 @@
 "use client";
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useForm } from "react-hook-form";
+import useAuth from "@/hooks/useAuth";
+import { toast } from "react-toastify";
+import Toaster from "@/components/Toaster";
 const LoginForm = () => {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm();
-    return (
-        <form 
-        // onSubmit={handleSubmit(onSubmit)} 
-        className="card-body">
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const { signIn, googleLogin } = useAuth();
+  const onSubmit = async (data) => {
+    const { email, password } = data;
+    console.log(email, password);
+    try {
+      const user = await signIn(email, password);
+      toast.success("Login Successful!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    } catch (error) {
+      toast.error(error.message || "Login Failed!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+  const handleGoogleLogin = async () => {
+    console.log("google login");
+    toast.success("Google Login successful!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
+    try {
+      const user = await googleLogin();
+    } catch (error) {
+      toast.error(error.message || "Login Failed!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+    }
+  };
+  return (
+    <form onSubmit={handleSubmit(onSubmit)} className="card-body">
       <div className="form-control">
-        
         <input
           type="email"
           placeholder="email"
@@ -22,11 +79,12 @@ const LoginForm = () => {
           name="email"
           className="input input-bordered"
           autoComplete="email"
-          {...register("email"
-        //   , {
-        //     required: true,
-        //     pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/,
-        //   }
+          {...register(
+            "email"
+            //   , {
+            //     required: true,
+            //     pattern: /^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/,
+            //   }
           )}
         />
         {/* {errors.email && (
@@ -57,7 +115,9 @@ const LoginForm = () => {
         </label> */}
       </div>
       <div className="form-control mt-6">
-        <button className="btn bg-orange-500 text-white hover:bg-orange-600 hover:text-black" type="submit">
+        <button
+          className="btn bg-orange-500 text-white hover:bg-orange-600 hover:text-black"
+          type="submit">
           Login
         </button>
       </div>
@@ -69,14 +129,14 @@ const LoginForm = () => {
       </p>
       <div className="divider mt-5">OR</div>
       <button
-        // onClick={handleGoogleLogin}
+        onClick={handleGoogleLogin}
         type="button"
-        className="btn bg-orange-500 text-white hover:text-black hover:bg-orange-600 mt-5 mx-auto"
-      >
+        className="btn bg-orange-500 text-white hover:text-black hover:bg-orange-600 mt-5 mx-auto">
         <FcGoogle className="text-3xl mr-3" /> Continue with google
       </button>
+      <Toaster></Toaster>
     </form>
-    );
+  );
 };
 
 export default LoginForm;
