@@ -1,4 +1,5 @@
 "use client";
+import MySVGComponent from "@/components/svgComponents";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Lottie from "lottie-react";
@@ -49,11 +50,12 @@ const ProcessDetails = () => {
           </h4>
         </div>
       </div>
-      <div className="mx-20 bg-orange-500 h-2 rounded-lg mb-10 "></div>
+
+      <div className="mx-20 bg-orange-500 h-2 rounded-lg mb-10"></div>
 
       <>
         {/* step 1 browse and explore */}
-        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20">
+        <div className="flex justify-center flex-col lg:flex-row text-white mx-3 lg:mx-20 ">
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -299,6 +301,10 @@ const ProcessDetails = () => {
             </p>
           </div>
         </div>
+      </>
+
+      <>
+        <MySVGComponent></MySVGComponent>
       </>
     </>
   );
