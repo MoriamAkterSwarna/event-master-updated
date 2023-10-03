@@ -1,6 +1,7 @@
 "use client";
 import Toaster from "@/components/Toaster";
 import useAuth from "@/hooks/useAuth";
+import createJwt from "@/utils/createJwt";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
@@ -61,6 +62,7 @@ const SignUpForm = () => {
     console.log(name, email, password, photo, event);
     try {
       const user = await createUser(email, password);
+      createJwt({ email });
       await profileUpdate({
         displayName: name,
         photoURL: photo,
@@ -90,19 +92,20 @@ const SignUpForm = () => {
   };
   const handleGoogleLogin = async () => {
     console.log("google login");
-    toast.success("Google Sign In Done!", {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
 
     try {
-      const user = await googleLogin();
+      const { user } = await googleLogin();
+      createJwt({ email: user.email });
+      toast.success("Google Sign In Done!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
     } catch (error) {
       toast.error(error.message || "Registered Failed!", {
         position: "top-center",
