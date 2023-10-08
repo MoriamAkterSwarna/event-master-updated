@@ -9,6 +9,7 @@ It is a Full Stack Web application Based on Next JS. This Project is for handlin
 - Material UI
 - Framer Motion
 - Tailwind CSS
+- React Leaflet
 - Daisy UI
 - React Hook Form
 - Aos animation Library
