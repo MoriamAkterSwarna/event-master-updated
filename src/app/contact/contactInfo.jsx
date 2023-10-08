@@ -1,6 +1,6 @@
 import ContactForm from "@/components/contactForm";
 import OthersContactInfo from "@/components/othersContactInfo";
-import Map from "./Map";
+import Map from "./map";
 
 const ContactInfo = () => {
   return (
