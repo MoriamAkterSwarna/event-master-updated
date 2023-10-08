@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import useAuth from "@/hooks/useAuth";
 import { toast } from "react-toastify";
 import Toaster from "@/components/Toaster";
-import createJwt from "@/utils/createJwt";
+
 const LoginForm = () => {
   const {
     register,
@@ -18,8 +18,8 @@ const LoginForm = () => {
     const { email, password } = data;
     console.log(email, password);
     try {
-      const { user } = await signIn(email, password);
-      createJwt({ email });
+      const user = await signIn(email, password);
+
       toast.success("Google Sign In Done!", {
         position: "top-center",
         autoClose: 5000,
@@ -58,7 +58,7 @@ const LoginForm = () => {
 
     try {
       const user = await googleLogin();
-      createJwt({ email: user.email });
+
       toast.success("Google Login successful!", {
         position: "top-center",
         autoClose: 5000,

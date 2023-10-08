@@ -1,7 +1,6 @@
 "use client";
 import Toaster from "@/components/Toaster";
 import useAuth from "@/hooks/useAuth";
-import createJwt from "@/utils/createJwt";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
@@ -62,7 +61,7 @@ const SignUpForm = () => {
     console.log(name, email, password, photo, event);
     try {
       const user = await createUser(email, password);
-      createJwt({ email });
+
       await profileUpdate({
         displayName: name,
         photoURL: photo,
@@ -94,8 +93,8 @@ const SignUpForm = () => {
     console.log("google login");
 
     try {
-      const { user } = await googleLogin();
-      createJwt({ email: user.email });
+      const user = await googleLogin();
+
       toast.success("Google Sign In Done!", {
         position: "top-center",
         autoClose: 5000,

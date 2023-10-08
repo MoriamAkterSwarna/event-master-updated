@@ -1,26 +1,3 @@
-// export const navData = [
-//     {
-//       path: "/",
-//       title: "Home",
-//     },
-//     {
-//       path: "/company",
-//       title: "Company",
-//     },
-//     {
-//         path: "/events",
-//         title: "Events",
-//       },
-//       {
-//         path: '/categories',
-//         title: "Categories"
-//       },
-//     {
-//         path:"/about",
-//         title: "About Us"
-//     }
-//   ];
-
 export const navData = [
   {
     path: "/",
@@ -48,16 +25,16 @@ export const navData = [
   {
     path: "/categories",
     title: "Categories",
-    dropdown: [
-      {
-        path: "/categories/item1",
-        title: "Item 1",
-      },
-      {
-        path: "/categories/item2",
-        title: "Item 2",
-      },
-    ],
+    // dropdown: [
+    //   {
+    //     path: "/categories/item1",
+    //     title: "Item 1",
+    //   },
+    //   {
+    //     path: "/categories/item2",
+    //     title: "Item 2",
+    //   },
+    // ],
   },
   {
     path: "/events",
@@ -69,3 +46,23 @@ export const navData = [
   },
  
 ];
+export const afterLoginNavData = [
+  ...navData,
+  {
+    path: "/dashboard",
+    title: "Dashboard",
+  },
+];
+
+export const beforeLoginNavData = [
+  ...navData,
+  {
+    path: "/signup",
+    title: "Signup",
+  },
+  {
+    path: "/login",
+    title: "Login",
+  },
+];
+

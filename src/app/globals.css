@@ -69,3 +69,14 @@
   background-size: cover;
   width: 100%;
 }
+.contact-blob {
+  background-image: url("../assets/contactImg/blob.svg");
+  background-repeat: no-repeat;
+  object-fit: fill;
+  background-size: 100% 100%;
+  width: 50vw;
+  height: 80vh;
+  background-blend-mode: darken, luminosity;
+  background-color: transparent;
+  /* opacity: 0.3; */
+}

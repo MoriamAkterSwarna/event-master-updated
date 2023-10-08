@@ -1,5 +1,5 @@
 "use client";
-import { navData } from "@/data/navData";
+import { afterLoginNavData, beforeLoginNavData, navData } from "@/data/navData";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,8 +7,12 @@ import logo from "../assets/icons8-event-accepted-80.png";
 import NavLink from "./navLink";
 import ProfileMenu from "../components/profileMenu";
 import { useState } from "react";
+import useAuth from "@/hooks/useAuth";
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
+  const { user } = useAuth();
+  const { uid, displayName, photoURL } = user || {};
+  const allNavData = uid ? afterLoginNavData : beforeLoginNavData;
   return (
     <>
       <nav className="navbar bg-white top-0 z-10 lg:px-24 flex justify-around container">
@@ -25,7 +29,7 @@ const Navbar = () => {
           } top-[4.5rem] sm:mt-6 lg:mt-0 flex w-full flex-col pb-3
          pt-2 transition-all duration-500 lg:static lg:w-[unset] lg:flex-row bg-orange-100 lg:bg-transparent  lg:pb-0 lg:pt-0 z-30`}>
           <ul className="menu menu-horizontal flex-col px-1 lg:flex-row lg:justify-center h-full">
-            {navData.map(({ path, title, dropdown }) => (
+            {allNavData.map(({ path, title, dropdown }) => (
               <li key={path} className="mx-auto">
                 {dropdown ? (
                   <details className="dropdown">
