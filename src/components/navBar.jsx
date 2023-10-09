@@ -1,21 +1,21 @@
 "use client";
-import { afterLoginNavData, beforeLoginNavData, navData } from "@/data/navData";
+import { afterLoginNavData, beforeLoginNavData } from "@/data/navData";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../assets/icons8-event-accepted-80.png";
-import NavLink from "./navLink";
-import ProfileMenu from "../components/profileMenu";
-import { useState } from "react";
 import useAuth from "@/hooks/useAuth";
+import { useState } from "react";
+import logo from "../assets/icons8-event-accepted-80.png";
+import ProfileMenu from "../components/profileMenu";
+import NavLink from "./navLink";
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
   const { user } = useAuth();
-  const { uid, displayName, photoURL } = user || {};
+  const { uid } = user || {};
   const allNavData = uid ? afterLoginNavData : beforeLoginNavData;
   return (
     <>
-      <nav className="navbar bg-white top-0 z-10 lg:px-24 flex justify-around container">
+      <nav className="navbar bg-white top-0 z-10 lg:px-16 flex justify-around">
         <div className="flex">
           <Image
             src={logo}
@@ -63,14 +63,16 @@ const Navbar = () => {
                 )}
               </li>
             ))}
-            <Link href="/registerEvent">
-              <li>
-                {" "}
-                <button className=" btn-outline border-2 border-orange-500 hover:bg-orange-500  hover:border-none hover:text-white">
-                  Register An Event
-                </button>
-              </li>
-            </Link>
+            <div className="ml-16">
+              <Link href="/registerEvent">
+                <li>
+                  {" "}
+                  <button className=" btn-outline border-2 border-orange-500 hover:bg-orange-500  hover:border-none hover:text-white">
+                    Register An Event
+                  </button>
+                </li>
+              </Link>
+            </div>
           </ul>
 
           <ProfileMenu></ProfileMenu>

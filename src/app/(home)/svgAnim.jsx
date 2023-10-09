@@ -1,5 +1,4 @@
 import MySVGComponent from "@/components/svgComponents";
-import React from "react";
 
 const SvgAnim = () => {
   return (

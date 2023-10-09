@@ -23,20 +23,6 @@ export const navData = [
   },
   
   {
-    path: "/categories",
-    title: "Categories",
-    // dropdown: [
-    //   {
-    //     path: "/categories/item1",
-    //     title: "Item 1",
-    //   },
-    //   {
-    //     path: "/categories/item2",
-    //     title: "Item 2",
-    //   },
-    // ],
-  },
-  {
     path: "/events",
     title: "Events",
   },
@@ -48,10 +34,10 @@ export const navData = [
 ];
 export const afterLoginNavData = [
   ...navData,
-  {
-    path: "/dashboard",
-    title: "Dashboard",
-  },
+  // {
+  //   path: "/dashboard",
+  //   title: "Dashboard",
+  // },
 ];
 
 export const beforeLoginNavData = [

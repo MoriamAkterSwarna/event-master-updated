@@ -9,7 +9,7 @@ import UpcomingEvents from "./upcoming";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Banner></Banner>
       <UpcomingEvents></UpcomingEvents>
       <ServicesSection></ServicesSection>
@@ -18,7 +18,7 @@ const HomePage = () => {
       <Sponsors></Sponsors>
       <SvgAnim></SvgAnim>
       {/* <Feedback></Feedback> */}
-    </div>
+    </>
   );
 };
 

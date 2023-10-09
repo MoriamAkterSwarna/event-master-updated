@@ -46,6 +46,9 @@ const OthersContactInfo = () => {
         </div>
         <p className="mt-3">
           <span className="font-bold">Website:</span>
+          <a href="https://event-master-web.vercel.app/" target="_blank">
+            https://event-master-web.vercel.app
+          </a>
         </p>
       </div>
     </div>

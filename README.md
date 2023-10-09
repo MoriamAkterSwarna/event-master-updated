@@ -2,6 +2,8 @@
 
 It is a Full Stack Web application Based on Next JS. This Project is for handling all events and supervise post event services also.
 
+# Live Site Link: https://event-master-web.vercel.app/
+
 # Technologies:
 
 - Next JS

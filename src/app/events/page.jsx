@@ -1,5 +1,13 @@
+import MySVGComponent from "@/components/svgComponents";
+import EventTabs from "./eventTabs";
+
 const EventsPage = () => {
-  return <div>events</div>;
+  return (
+    <div>
+      <EventTabs></EventTabs>
+      <MySVGComponent></MySVGComponent>
+    </div>
+  );
 };
 
 export default EventsPage;
